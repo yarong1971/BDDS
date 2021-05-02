@@ -1,13 +1,12 @@
-package java_basics.java_test;
+package java_basics.java_test.model.classes;
 
+import java_basics.java_test.model.interfaces.Reader;
 import lombok.SneakyThrows;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.util.List;
-import java.util.Optional;
 
 public class ObjectReader<T> implements Reader<T> {
     @SneakyThrows

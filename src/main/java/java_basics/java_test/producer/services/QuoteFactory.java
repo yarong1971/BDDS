@@ -1,7 +1,9 @@
-package java_basics.java_test;
+package java_basics.java_test.producer.services;
+
+import java_basics.java_test.model.classes.Quote;
+import java_basics.java_test.producer.utils.RandomUtil;
 
 import java.util.List;
-import java.util.function.Supplier;
 
 public class QuoteFactory {
     private static List<String> quoteList = List.of(

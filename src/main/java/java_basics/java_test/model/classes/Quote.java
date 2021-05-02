@@ -1,5 +1,6 @@
-package java_basics.java_test;
+package java_basics.java_test.model.classes;
 
+import java_basics.java_test.model.enums.QuoteStatus;
 import lombok.*;
 
 import java.io.Serializable;

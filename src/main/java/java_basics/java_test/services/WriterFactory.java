@@ -1,4 +1,8 @@
-package java_basics.java_test;
+package java_basics.java_test.services;
+
+import java_basics.java_test.model.classes.JsonWriter;
+import java_basics.java_test.model.classes.ObjectWriter;
+import java_basics.java_test.model.interfaces.Writer;
 
 import java.util.HashMap;
 import java.util.Map;

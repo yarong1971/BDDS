@@ -1,8 +1,8 @@
-package java_basics.java_test;
+package java_basics.java_test.model.classes;
+
+import java_basics.java_test.model.interfaces.Reader;
 
 import java.io.File;
-import java.util.List;
-import java.util.Optional;
 
 public class JsonReader<T> implements Reader<T> {
     @Override

@@ -1,4 +1,4 @@
-package java_basics.java_test;
+package java_basics.java_test.producer.utils;
 
 import java.util.List;
 import java.util.Random;

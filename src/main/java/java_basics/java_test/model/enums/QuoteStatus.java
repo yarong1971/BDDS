@@ -1,4 +1,4 @@
-package java_basics.java_test;
+package java_basics.java_test.model.enums;
 
 import java.util.Arrays;
 

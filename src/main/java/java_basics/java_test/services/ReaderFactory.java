@@ -1,7 +1,10 @@
-package java_basics.java_test;
+package java_basics.java_test.services;
+
+import java_basics.java_test.model.classes.JsonReader;
+import java_basics.java_test.model.classes.ObjectReader;
+import java_basics.java_test.model.interfaces.Reader;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
 

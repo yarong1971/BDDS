@@ -1,17 +1,15 @@
-package java_basics.java_test;
+package java_basics.java_test.consumer;
 
+import java_basics.java_test.model.interfaces.Reader;
+import java_basics.java_test.services.ReaderFactory;
+import java_basics.java_test.model.interfaces.Writer;
+import java_basics.java_test.services.WriterFactory;
+import java_basics.java_test.model.classes.Quote;
 import lombok.SneakyThrows;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Constructor;
-import java.net.URI;
 import java.nio.file.*;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
 import java.util.stream.Stream;
 
 public class Consumer {

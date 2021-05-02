@@ -1,16 +1,14 @@
-package java_basics.java_test;
+package java_basics.java_test.model.classes;
 
+import java_basics.java_test.model.interfaces.Writer;
 import lombok.SneakyThrows;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.Date;
-import java.util.List;
 
 public class ObjectWriter<T> implements Writer<T> {
     @SneakyThrows
