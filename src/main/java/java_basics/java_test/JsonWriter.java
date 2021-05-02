@@ -26,6 +26,7 @@ public class JsonWriter<T> implements Writer<T> {
             if (file.exists()) {
                 file.delete();
             }
+
             file.createNewFile();
 
             FileWriter fw = new FileWriter(file);

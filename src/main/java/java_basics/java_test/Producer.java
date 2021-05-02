@@ -11,7 +11,6 @@ import java.util.List;
 
 @Data
 public class Producer {
-
     public static void main(String[] args) {
         Quote quote = QuoteFactory.createQuote();
         System.out.println(quote);

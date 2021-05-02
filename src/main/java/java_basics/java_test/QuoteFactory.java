@@ -4,9 +4,6 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class QuoteFactory {
-
-    //private Supplier<Quote> quoteSupplier = () -> new Quote(System.nanoTime(),getRandomQuote());
-
     private static List<String> quoteList = List.of(
              "Hasta la vista, baby",
              "I don’t know how much longer I can hold this",

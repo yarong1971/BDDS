@@ -16,16 +16,9 @@ import java.util.stream.Stream;
 public class Consumer {
     @SneakyThrows
     public static void main(String[] args) {
-
-        //final File sourceDir = new File("C:/Yaron/Files");
         final Path path = Path.of("C:/Yaron/ObjectFiles");
 
         while (!isEmpty(path)) {
-
-            //Task task = new Task();
-            //new Thread(task).start();
-            //new Thread(new Task()).start();
-
             new Thread(() -> {
                 System.out.println("Thread: " + Thread.currentThread().getId());
                 File[] fileList = path.toFile().listFiles();

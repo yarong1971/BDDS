@@ -23,6 +23,7 @@ public class ObjectWriter<T> implements Writer<T> {
         if (file.exists()) {
             file.delete();
         }
+
         file.createNewFile();
 
         FileOutputStream fos = new FileOutputStream(file);

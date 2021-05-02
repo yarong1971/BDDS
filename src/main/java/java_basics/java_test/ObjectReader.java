@@ -24,7 +24,6 @@ public class ObjectReader<T> implements Reader<T> {
         catch (IOException e) {
             e.printStackTrace();
         }
-
         return obj;
     }
 }

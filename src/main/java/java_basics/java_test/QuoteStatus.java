@@ -1,7 +1,5 @@
 package java_basics.java_test;
 
-import java_basics.enums.HttpCodeHandler;
-
 import java.util.Arrays;
 
 public enum QuoteStatus {
