@@ -11,8 +11,7 @@ public class Quote implements Serializable {
     private String message;
     private QuoteStatus status;
 
-    public Quote(){
-    }
+    public Quote(){}
 
     public Quote(long id, String message) {
         this.id = id;

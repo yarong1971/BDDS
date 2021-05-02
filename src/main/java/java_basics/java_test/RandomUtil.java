@@ -6,7 +6,8 @@ import java.util.Random;
 public class RandomUtil {
     private static Random random = new Random();
 
-    public static <T>  T getRandomItem(List<T> list) {
+    public static <T>  T getRandomItem(List<T> list)
+    {
         int i = getNumber(list.size()) - 1;
         return list.get(i);
     }
