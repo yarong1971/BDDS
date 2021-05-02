@@ -12,9 +12,15 @@ import java.util.List;
 @Data
 public class Producer {
     public static void main(String[] args) {
+        WriterFactory<Quote> writerFactory = new WriterFactory<Quote>();
+
         Quote quote = QuoteFactory.createQuote();
         System.out.println(quote);
-        ObjectWriter<Quote> writer = new ObjectWriter<>();
+
+        Writer<Quote> writer = writerFactory.getWriter("object");
         writer.write(quote);
+
+        /*ObjectWriter<Quote> writer = new ObjectWriter<>();
+        writer.write(quote);*/
     }
 }

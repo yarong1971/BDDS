@@ -4,6 +4,7 @@ import lombok.SneakyThrows;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Constructor;
 import java.net.URI;
 import java.nio.file.*;
 import java.util.Arrays;
@@ -17,6 +18,8 @@ public class Consumer {
     @SneakyThrows
     public static void main(String[] args) {
         final Path path = Path.of("C:/Yaron/ObjectFiles");
+        ReaderFactory<Quote> readerFactory = new ReaderFactory<Quote>();
+        WriterFactory<Quote> writerFactory = new WriterFactory<Quote>();
 
         while (!isEmpty(path)) {
             new Thread(() -> {
@@ -24,10 +27,12 @@ public class Consumer {
                 File[] fileList = path.toFile().listFiles();
                 File file = fileList[0];
 
-                ObjectReader<Quote> reader = new ObjectReader<>();
+                Reader<Quote> reader = readerFactory.getReader("object");
                 Quote quote = reader.read(file);
-                JsonWriter<Quote> writer = new JsonWriter<>();
+
+                Writer<Quote> writer = writerFactory.getWriter("json");
                 writer.write(quote);
+
                 if (file.exists()) {
                     System.out.print("File " + fileList[0].getName());
                     if(fileList[0].delete())
@@ -41,7 +46,7 @@ public class Consumer {
                 }
             }).start();
 
-            Thread.sleep(3000);
+            Thread.sleep(1500);
         }
 
         System.out.println("Directory " + path + " is empty");
