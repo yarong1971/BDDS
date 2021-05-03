@@ -2,7 +2,7 @@ package java_basics.java_test.services;
 
 import java_basics.java_test.model.classes.JsonReader;
 import java_basics.java_test.model.classes.ObjectReader;
-import java_basics.java_test.model.interfaces.Reader;
+import java_basics.java_test.infra.Reader;
 
 import java.util.HashMap;
 import java.util.Map;

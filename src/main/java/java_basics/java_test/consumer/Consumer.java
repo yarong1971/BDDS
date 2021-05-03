@@ -1,8 +1,8 @@
 package java_basics.java_test.consumer;
 
-import java_basics.java_test.model.interfaces.Reader;
+import java_basics.java_test.infra.Reader;
 import java_basics.java_test.services.ReaderFactory;
-import java_basics.java_test.model.interfaces.Writer;
+import java_basics.java_test.infra.Writer;
 import java_basics.java_test.services.WriterFactory;
 import java_basics.java_test.model.classes.Quote;
 import lombok.SneakyThrows;

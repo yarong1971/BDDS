@@ -1,6 +1,6 @@
 package java_basics.java_test.model.classes;
 
-import java_basics.java_test.model.interfaces.Reader;
+import java_basics.java_test.infra.Reader;
 import lombok.SneakyThrows;
 
 import java.io.File;

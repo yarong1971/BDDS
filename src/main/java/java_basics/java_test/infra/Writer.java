@@ -1,4 +1,4 @@
-package java_basics.java_test.model.interfaces;
+package java_basics.java_test.infra;
 
 public interface Writer <T>{
     void write(T t);

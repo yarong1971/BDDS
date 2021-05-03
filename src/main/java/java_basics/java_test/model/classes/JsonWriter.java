@@ -2,7 +2,7 @@ package java_basics.java_test.model.classes;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import java_basics.java_test.model.interfaces.Writer;
+import java_basics.java_test.infra.Writer;
 import lombok.SneakyThrows;
 
 import java.io.*;

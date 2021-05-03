@@ -1,7 +1,7 @@
 package java_basics.java_test.producer;
 
 import java_basics.java_test.producer.services.QuoteFactory;
-import java_basics.java_test.model.interfaces.Writer;
+import java_basics.java_test.infra.Writer;
 import java_basics.java_test.services.WriterFactory;
 import java_basics.java_test.model.classes.Quote;
 import lombok.Data;

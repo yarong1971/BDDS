@@ -1,6 +1,6 @@
 package java_basics.java_test.model.classes;
 
-import java_basics.java_test.model.interfaces.Writer;
+import java_basics.java_test.infra.Writer;
 import lombok.SneakyThrows;
 
 import java.io.File;
